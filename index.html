@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="/assets/css/form.css" />
-    <title>Blog Landing Page</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/form.css" />
+        <title>Blog - Landing Page</title>
+    </head>
 
-<body>
+    <body>
+        <header>
+          <h1>Welcome to my Blog!</h1>
+         <h2>Want to share something? Type it below!</h2>
+        </header>
 
-</body>
+        <main class = "card">
+            <div class = "logo">
+                <img src = "./assets/images/placeholder.webp" alt = "placeholder image">
+            </div>
+
+            <form class = "input-card">
+                <h3>What's on your mind?</h3>
+                <ul>
+                    <li>
+                        <div class = "input-group">
+                            <label>Username:</label>
+                            <input type = "text" name = "username" id = "username" placeholder= "Username here!">               
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "input-group">
+                            <label>Title:</label>
+                            <input type = "text" name = "title" id = "title" placeholder= "Awesome title here!">
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "input-group">
+                            <label>Content:</label>
+                            <textarea type = "text" name = "content" id = "content" placeholder= "Let the creative juices flow here!"></textarea>
+                        </div>
+                    </li>
+                </ul>
+                <div id = "message"></div>
+                <button id = "submit">Submit</button>
+            </form>
+
+        </main>
+
+        <a href="#">Go to blog ==></a>
+
+        <footer>
+            <h2>Made with HTML, CSS and JavaScript!</h2>
+        </footer>
+
+        <script src = "assets/js/logic.js"></script>
+        <script src = "assets/js/blog.js"></script>
+    </body>
+</html>

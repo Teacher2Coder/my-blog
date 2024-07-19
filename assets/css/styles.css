@@ -1,0 +1,50 @@
+:root {
+    --dark: #001764;
+    --medium: #115dc3;
+    --light: #00e8ff;
+}
+
+* {
+    background-color: var(--light);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 300%;
+    margin: 10px 0 10px 20px;
+    background-color: var(--dark);
+}
+
+h2 {
+    color: white;
+    font-size: 200%;
+    margin: 10px 0 10px 20px;
+    background-color: var(--dark);
+}
+
+h3 {
+    font-size: 150%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    border: black 5px solid;
+    background-color: var(--dark);
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    min-height: 50px;
+    border: black 5px solid;
+    background-color: var(--dark);  
+}
