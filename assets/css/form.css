@@ -1,0 +1,156 @@
+:root {
+    --dark: #001764;
+    --medium: #115dc3;
+    --light: #00e8ff;
+    --input: #ECECEC;
+}
+
+main {
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* image styles */
+img {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    width: 40%;
+}
+
+/* Form styles */
+.input-card {
+    display: flex;
+    flex-direction: column;
+    border: 5px black solid;
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    align-content: center;
+    background-color: var(--medium);
+}
+
+.input-card h3 {
+    text-align: center;
+    padding: 5px;
+    background-color: var(--medium);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: var(--medium);
+    border: 1px var(--medium) solid;
+}
+
+.input-group label {
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: var(--medium);
+}
+
+.input-group input {
+    width: 100%;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    background-color: var(--input);
+}
+
+.input-group textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 400px;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    background-color: var(--input);
+}
+
+/* Style for text that will show after content is submitted via JS */
+#message {
+    text-align: center;
+}
+
+
+/* Button styles and psuedo classes */
+button {
+    align-content: center;
+    margin: 0.6em auto;
+    padding: 5px;
+    border: 2px black solid;
+    background-color: var(--dark);
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--dark);
+}
+
+button:active {
+    background-color: var(--dark);
+    color: white;
+}
+
+
+a {
+    display: block;
+    width: 15%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border: 2px black solid;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--dark);
+}
+
+a:hover {
+    background-color: white;
+    color: var(--dark);
+}
+
+a:active {
+    background-color: var(--dark);
+    color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .card {
+      flex-direction: column;
+    }
+
+    img {
+        padding-bottom: 10px;
+    }
+
+    .input-card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    img {
+        max-width: 100%;
+    }
+}

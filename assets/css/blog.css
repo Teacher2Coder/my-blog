@@ -1,0 +1,44 @@
+:root {
+    --dark: #001764;
+    --medium: #115dc3;
+    --light: #00e8ff;
+}
+
+/* Styles for list of blog posts */
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(light);
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styles for each individual blog post */
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: var(--medium);
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+li h3 {
+    text-align: center;
+    background-color: var(--medium);
+    padding: 5px;
+}
+
+li h4 {
+    background-color: var(--medium);
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+li p {
+    background-color: var(--medium);
+    padding-left: 5px;
+    padding-right: 5px;
+}
