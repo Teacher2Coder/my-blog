@@ -1,6 +1,8 @@
+// Selects elements on the page
 const submitButton = document.querySelector('#submit');
 const message = document.querySelector('#message');
 
+// Selects user input fields
 const usernameInput = document.querySelector('#username');
 const titleInput = document.querySelector('#title');
 const contentInput = document.querySelector('#content');

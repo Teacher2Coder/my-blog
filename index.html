@@ -17,38 +17,46 @@
         </header>
 
         <main class = "card">
+            <!-- Silly logo made with little effort to be inserted here -->
             <div class = "logo">
-                <img src = "./assets/images/logo.png" alt = "placeholder image">
+                <img src = "./assets/images/logo.png" alt = "blog logo">
             </div>
 
+            <!-- Form for the user to fill out so that they can add content -->
             <form class = "input-card">
                 <h3>What's on your mind?</h3>
                 <ul>
                     <li>
+                        <!-- Username/Author input -->
                         <div class = "input-group">
                             <label>Username:</label>
                             <input type = "text" name = "username" id = "username" placeholder= "Username here!">               
                         </div>
                     </li>
                     <li>
+                        <!-- Title input -->
                         <div class = "input-group">
                             <label>Title:</label>
                             <input type = "text" name = "title" id = "title" placeholder= "Awesome title here!">
                         </div>
                     </li>
                     <li>
+                        <!-- Content input -->
                         <div class = "input-group">
                             <label>Content:</label>
                             <textarea type = "text" name = "content" id = "content" placeholder= "Let the creative juices flow here!"></textarea>
                         </div>
                     </li>
                 </ul>
+                <!-- Message to be displayed after input is submitted -->
                 <div id = "message"></div>
+                <!-- Submit button -->
                 <button id = "submit">Submit</button>
             </form>
 
         </main>
 
+        <!-- Anchor to blog page -->
         <a href="./blog.html">Go to blog ➡️ </a>
 
         <footer>

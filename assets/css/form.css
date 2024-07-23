@@ -9,6 +9,7 @@ main {
     justify-content: center;
 }
 
+/* Contains the logo and the user input form */
 .card {
     display: flex;
     flex-direction: row;
