@@ -20,7 +20,7 @@ function renderPosts () {
         const para = document.createElement('p');
 
         h3.textContent = postTitle;
-        h4.textContent = postAuthor;
+        h4.textContent = `By ${postAuthor}`;
         para.textContent = postContent;
 
         li.appendChild(h3);
@@ -32,15 +32,24 @@ function renderPosts () {
 
 function init () {  
     if (titleStore === null) {
+        // If no content, display a message and a sad face emoji
         const noContent = document.createElement('li');
+        const noImg = document.createElement('p')
 
         noContent.textContent = 'No content yet. Come back later!';
         noContent.style.textAlign = "center";
         noContent.style.padding = "50px";
         noContent.style.fontWeight = "bold";
+        noContent.style.fontSize = "40px";
+
+        noImg.textContent = "😔";
+        noImg.style.fontSize = "100px";
+        noImg.style.paddingTop = "50px";
 
         blogList.appendChild(noContent);
+        noContent.appendChild(noImg);
     } else {
+    // If there is content, diplay the posts
     renderPosts();
     }
 }
