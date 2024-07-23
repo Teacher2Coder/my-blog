@@ -29,18 +29,24 @@ li {
     border-radius: 10px;
 }
 
+/* For the blog post title */
 li h3 {
     text-align: center;
     background-color: var(--medium);
     padding: 5px;
 }
 
+/* For the author of the blog post */
 li h4 {
     text-align: center;
     background-color: var(--medium);
     padding-bottom: 10px;
+    padding-left: 5px;
+    text-align: center;
+
 }
 
+/* For the content of the blog post */
 li p {
     background-color: var(--medium);
     padding-left: 5px;

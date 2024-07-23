@@ -9,6 +9,7 @@ main {
     justify-content: center;
 }
 
+/* Contains the logo and the user input form */
 .card {
     display: flex;
     flex-direction: row;
@@ -52,7 +53,7 @@ img {
     flex-direction: column;
     padding: 5px;
     background-color: var(--medium);
-    border: 1px var(--medium) solid;
+    border: 2px var(--medium) solid;
 }
 
 .input-group label {
@@ -86,18 +87,23 @@ img {
 #message {
     text-align: center;
     background-color: var(--medium);
+    padding-bottom: 5px;
 }
 
 
 /* Button styles and psuedo classes */
 button {
-    align-content: center;
-    margin: 0.6em auto;
+    display: block;
+    width: 15%;
+    text-align: center;
+    text-decoration: none;
     padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 15px;
     border: 2px black solid;
-    background-color: var(--dark);
-    color: white;
     border-radius: 5px;
+    color: white;
+    background-color: var(--dark);
 }
 
 button:hover {

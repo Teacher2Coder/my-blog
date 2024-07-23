@@ -4,6 +4,7 @@
     --light: #00e8ff;
 }
 
+/* Universal elements */
 * {
     background-color: var(--light);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -49,6 +50,7 @@ footer {
     background-color: var(--dark);  
 }
 
+/* Styles for the anchors on each page */
 a {
     display: block;
     width: 15%;
