@@ -85,6 +85,7 @@ img {
 /* Style for text that will show after content is submitted via JS */
 #message {
     text-align: center;
+    background-color: var(--medium);
 }
 
 
