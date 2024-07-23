@@ -38,10 +38,12 @@ li h3 {
 
 /* For the author of the blog post */
 li h4 {
+    text-align: center;
     background-color: var(--medium);
     padding-bottom: 10px;
     padding-left: 5px;
     text-align: center;
+
 }
 
 /* For the content of the blog post */
