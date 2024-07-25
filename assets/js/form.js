@@ -27,22 +27,30 @@ submitButton.addEventListener('click', function (event) {
     // Prevents default action
     event.preventDefault();
 
-    // Retrieves blogs from local storage
-    let blogStorage = JSON.parse(localStorage.getItem('blogs'));
+    if (usernameInput.value === "") {
+        message.textContent = "Please enter a username";
+    } else if (titleInput.value === "") {
+        message.textContent = "Please enter a title for your post";
+    } else if (contentInput.value === "") {
+        message.textContent = "Please enter some content for your post";
+    } else {
+        // Retrieves blogs from local storage
+        let blogStorage = JSON.parse(localStorage.getItem('blogs'));
 
-    // Push user inputs into object
-    blogStorage.postTitles.push(titleInput.value);
-    blogStorage.postAuthors.push(usernameInput.value);
-    blogStorage.postContent.push(contentInput.value);
+        // Push user inputs into object
+        blogStorage.postTitles.push(titleInput.value);
+        blogStorage.postAuthors.push(usernameInput.value);
+        blogStorage.postContent.push(contentInput.value);
 
-    // Stores User inputs as a string
-    localStorage.setItem('blogs', JSON.stringify(blogStorage));
+        // Stores User inputs as a string
+        localStorage.setItem('blogs', JSON.stringify(blogStorage));
     
-    // Clears input fields
-    usernameInput.value = "";
-    titleInput.value = "";
-    contentInput.value = "";
+        // Clears input fields
+        usernameInput.value = "";
+        titleInput.value = "";
+        contentInput.value = "";
 
-    // Takes user to the blog page
-    window.location.assign("blog.html");
+        // Takes user to the blog page
+        window.location.assign("blog.html");
+    }
 } ) ;
