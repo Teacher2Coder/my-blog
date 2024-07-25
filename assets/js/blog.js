@@ -7,16 +7,16 @@ let blogStore = JSON.parse(localStorage.getItem('blogs'));
 // Function for rendering blog posts on blog page
 function renderPosts () {
     // For every blog post stored, this loop will repeat itself
-    for (let i = 0; i < blogStore.titleStore.length; i++) {
+    for (let i = 1; i < blogStore.postAuthors.length; i++) {
         
         // Creates a list item element and gives a dataset for the iteration completed
         const li = document.createElement('li');
         li.setAttribute('data-index', i);
 
         // Retreive blog content from the storage and set as a variable
-        const postTitle = blogStore.titleStore[i];
-        const postAuthor = blogStore.authorStore[i];
-        const postContent = blogStore.contentStore[i];
+        const postTitle = blogStore.postTitles[i];
+        const postAuthor = blogStore.postAuthors[i];
+        const postContent = blogStore.postContent[i];
 
         // creates elements to be placewd in the list item
         const h3 = document.createElement('h3');
@@ -39,7 +39,7 @@ function renderPosts () {
 // Function to be run when the blog page is opened
 function init () {  
     // If no content, display a message and a sad face emoji
-    if (blogStore === null) {
+    if (blogStore.postAuthors.length === 1) {
         // creates a list item and a <p> element
         const noContent = document.createElement('li');
         const sadFace = document.createElement('p')
