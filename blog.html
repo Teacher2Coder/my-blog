@@ -10,19 +10,15 @@
     <title>Blog - Posts</title>
   </head>
 
-  <body class = "bg">
+  <body class = "bg dark">
     <header>
       <div class = "titles">
         <h1>Welcome to my blog!</h1>
         <h2> Check out these super cool posts!</h2>
       </div>
       <div>
-        <p>Light Mode</p>
-        <label class="switch col">
-          <input type="checkbox" id="theme-switcher">
-          <span class="slider round"></span>
-        </label>
-        <p>Dark Mode</p>
+        <p>Light/Dark Mode Toggle</p>
+        <button class = "emoji"></button>
       </div>
     </header>
 
@@ -30,6 +26,9 @@
       <!-- Anchor that will take you back to the landing page -->
       <a href="./index.html">⬅️ Back to Landing Page</a>
       <!-- This is where the blog posts will render if there are any in storage -->
+      <div class = "logo">
+        <img class = "custom" alt = "blog logo">
+      </div>
       <ul id = "blog-posts"></ul>
     </main>
 

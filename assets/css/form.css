@@ -116,6 +116,14 @@ button:active {
     color: white;
 }
 
+.emoji {
+    border: none;
+}
+
+.emoji:hover {
+    background-color: var(--dark);
+    color: var(--dark);
+}
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
