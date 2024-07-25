@@ -6,7 +6,6 @@
 
 /* Universal elements */
 * {
-    background-color: var(--light);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -35,20 +34,6 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-header {
-    text-align: center;
-    width: 100%;
-    border: black 5px solid;
-    background-color: var(--dark);
-}
-
-footer {
-    text-align: center;
-    width: 100%;
-    min-height: 50px;
-    border: black 5px solid;
-    background-color: var(--dark);  
-}
 
 /* Styles for the anchors on each page */
 a {
@@ -73,4 +58,74 @@ a:hover {
 a:active {
     background-color: var(--dark);
     color: white;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    border: black 5px solid;
+    background-color: var(--dark);
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark);
+    width: 80%;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    width: 20%;
+    background-color: var(--dark);
+}
+
+header div p {
+    width: 40%;
+    margin: 0 auto;
+    background-color: var(--dark);
+    color: white;
+}
+
+header div button {
+    background-color: var(--dark);
+    align-content: center;
+}
+
+
+footer {
+    text-align: center;
+    width: 100%;
+    min-height: 50px;
+    border: black 5px solid;
+    background-color: var(--dark);  
+}
+
+footer a {
+    background-color: var(--medium);
+    width: 30%;
+}
+
+footer a:hover {
+    background-color: white;
+    color: var(--dark);
+}
+
+footer a:active {
+    background-color: var(--dark);
+    color: white;
+}
+
+/* Dark/light mode values */
+
+.dark {
+    background-color: black;
+}
+
+.light {
+    background-color: var(--light);
 }
