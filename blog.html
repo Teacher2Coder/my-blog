@@ -10,10 +10,20 @@
     <title>Blog - Posts</title>
   </head>
 
-  <body>
+  <body class = "bg">
     <header>
-      <h1>Welcome to my blog!</h1>
-      <h2> Check out these super cool posts!</h2>
+      <div class = "titles">
+        <h1>Welcome to my blog!</h1>
+        <h2> Check out these super cool posts!</h2>
+      </div>
+      <div>
+        <p>Light Mode</p>
+        <label class="switch col">
+          <input type="checkbox" id="theme-switcher">
+          <span class="slider round"></span>
+        </label>
+        <p>Dark Mode</p>
+      </div>
     </header>
 
     <main>
@@ -25,9 +35,11 @@
 
     <footer>
       <h2>Made with HTML, CSS and JavaScript!</h2>
+      <a href = "https://teacher2coder.github.io/portfolio/">Check out my portfolio!</a>
     </footer>
 
     <script src = "assets/js/blog.js"></script>
+    <script src = "assets/js/logic.js"></script>
 
   </body>
 </html>
